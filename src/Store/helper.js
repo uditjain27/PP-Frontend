@@ -1,5 +1,5 @@
 //const baseURL = `http://www.localhost:8080/`/
-const baseURL = `http://p-project-backend.herokuapp.com/`;
+const baseURL = `https://p-project-backend.herokuapp.com/`;
 
 const GetDetailsOfMemberURL = `${baseURL}member/`;
 export const PrizeURL = `${baseURL}prize/`;
