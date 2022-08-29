@@ -10,7 +10,7 @@ function GetDetails() {
     const [isVisible, setIsVisible] = useState(false);
     const [isLoaderVisible, setIsLoaderVisible] = useState(false);
     const [tab, setTab] = useState();
-    const [isMessageVisible, setIsMessageVisible] = useState(true);
+    const [isMessageVisible, setIsMessageVisible] = useState(false);
     const [message, setMessage] = useState("User added successfully successfully");
     const [isError, setIsError] = useState(false);
 
