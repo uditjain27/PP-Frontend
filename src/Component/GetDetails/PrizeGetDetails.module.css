@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container>div {
+    width: 100%;
+    border-bottom: 1px #000 solid;
+}
+
+.container>div:first-child {
+    border-bottom: none;
+}
+
+.container>div>span {
+    display: inline-block;
+    width: 14.28%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.container>div:first-child>span {
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px #000 solid;
+    border-right: 1px #000 solid;
+    border-left: 1px #000 solid;
+}

@@ -1,0 +1,82 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("./../../Images/6685.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container>div:first-child{
+    margin-block-end: 100px;
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container>div>button{
+    margin: 0 50px;
+    font-size: 22px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4A90E2;
+    color: #fff;
+}
+
+.tab, .tabz{
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tabz{
+    margin-top: -50px;
+    width: 90vw;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.message{
+    display: block;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 25px 50px;
+    background-color: blue;
+    width: 350px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.message>span:last-child{
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    font-size: 22px;
+}
+
+.message>span:first-child{
+    width: 220px;
+    display: inline-block;
+}
+
+.error{
+    background-color: red;
+}
+
+.pass{
+    background-color: green;
+}

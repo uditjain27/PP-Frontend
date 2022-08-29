@@ -1,0 +1,117 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container>div:first-child {
+    width: 18%;
+}
+
+.container>div:nth-child(2) {
+    width: 30%;
+}
+
+.container>div:last-child {
+    width: 45%;
+}
+
+.buttonContainer>div {
+    border-radius: 5px;
+    background-color: #F5A623;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.877);
+}
+
+.buttonContainer>div:first-child {
+    margin-bottom: 50px;
+}
+
+.form {
+    width: 100%;
+    background-color: rgba(242, 242, 163, 0.826);
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.form>input {
+    width: 10rem;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    background-color: rgba(244, 244, 244, 0.825);
+}
+
+.form>input:focus {
+    outline: none;
+}
+
+.form>button {
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: #F5A623;
+    color: #fff;
+    font-size: 17px;
+    margin-top: 75px;
+    margin-right: 100px;
+    float: right;
+    cursor: pointer;
+}
+
+
+.card {
+    width: 100%;
+    height: 300px;
+    margin-right: 0rem;
+    padding: 1rem 5rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 1px rgb(229, 90, 90);
+    color: #000;
+}
+
+.card>div{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.card>div>span:first-child{
+    font-weight: 900;
+    display: inline-block;
+    min-width: 170px;
+    text-align: right;
+}
+
+.card>div>span:last-child{
+    margin-left: 20px;
+}
+
+select{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 12.5rem;
+    margin-left: 15px;
+}
+
+select:focus{
+    outline: none;
+}
+
+option{
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.tokenButton{
+    margin-top: 25px;
+    margin-inline: 20px;
+    background-color: #F39C12;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,33 @@
+.container {
+    margin: 0;
+    padding: 50px;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.innerflex {
+    display: flex;
+    flex-direction: column;
+}
+
+.innerflex p {
+    font-size: 70px;
+    font-weight: 800;
+    color: #4A90E2;
+}
+
+.innerflex a {
+    background-color: #F5A623;
+    border: none;
+    padding: 15px 30px;
+    margin: 30px auto;
+    font-size: 25px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
