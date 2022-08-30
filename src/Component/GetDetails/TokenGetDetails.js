@@ -13,6 +13,12 @@ const TokenGetDetails = function (props) {
     const tokenRef = useRef();
     const referenceRef = useRef();
 
+    const sortByToken = (a, b) => {
+        if (a.tokenNumber < b.tokenNumber) return -1;
+        else return 1;
+    };
+
+
     const changeView = async function (viewString) {
         setDisplayOutput(false);
         setView(viewString);
@@ -35,12 +41,16 @@ const TokenGetDetails = function (props) {
 
     const form2SubmitHandler = async () => {
         setDisplayOutput(false);
-        setReferenceDetails(await FetchDetailsByReference(referenceRef.current.value, props.togglePreLoader, props.setDisplayMessage));
+        const data = await FetchDetailsByReference(referenceRef.current.value, props.togglePreLoader, props.setDisplayMessage);
+        setReferenceDetails(data.sort(sortByToken));
     }
 
     const get = async () => {
         const data = await FetchAllReference(props.setDisplayMessage);
-        setReference(data);
+        setReference(data.sort((a,b) => {
+            if(a>b) return 1;
+            else return -1;
+        }));
     }
 
     const tokenOnClickHandler = (token) => {
