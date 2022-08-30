@@ -47,7 +47,7 @@ const TokenPostDetails = (props) => {
             contactNumber: String(contact2Ref.current.value),
             reference: reference2Ref.current.value
         }
-        //await postByReference(data, props.togglePreLoader, props.setDisplayMessage);
+        await postByReference(data, props.togglePreLoader, props.setDisplayMessage);
         e.target.reset();
         setTokenArray([]);
     }
