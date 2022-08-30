@@ -57,7 +57,7 @@ function PostDetails() {
             <div className={styles.container}>
                 <span className={styles.link}><Link to="/get">Get details</Link></span>
 
-                <div style={{ marginBlockEnd: "50px" }}>
+                <div>
                     <button onClick={() => tabChange("token")}>Token Details</button>
                     <button onClick={() => tabChange("prize")}>Prize Details</button>
                     <button onClick={() => tabChange("payment")}>Payment Details</button>
