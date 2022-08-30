@@ -53,10 +53,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    margin-top: 100px;
 }
 
 .tabz{
-    margin-top: -50px;
+    margin-top: 70px;
     width: 90vw;
     flex-direction: column;
     align-items: flex-start;
