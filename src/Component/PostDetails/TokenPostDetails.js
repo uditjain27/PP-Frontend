@@ -47,8 +47,9 @@ const TokenPostDetails = (props) => {
             contactNumber: String(contact2Ref.current.value),
             reference: reference2Ref.current.value
         }
-        await postByReference(data, props.togglePreLoader, props.setDisplayMessage);
+        //await postByReference(data, props.togglePreLoader, props.setDisplayMessage);
         e.target.reset();
+        setTokenArray([]);
     }
 
     const tokenAddHandler = (e) => {
@@ -58,6 +59,7 @@ const TokenPostDetails = (props) => {
             return;
         }
         setTokenArray([...tokenArray, token]);
+        tokenRef.current.focus();
     }
 
     return (
@@ -119,7 +121,7 @@ const TokenPostDetails = (props) => {
                     </div>
                     <div>
                         <label>Token Number : </label>
-                        <input type="number" placeholder="Token" ref={tokenRef}></input>
+                        <input type="number" placeholder="Token" ref={tokenRef} id="token"></input>
                         <span onClick={tokenAddHandler} style={{width:"50px", display:"inline-block", backgroundColor:"#F39C12", textAlign:"center", padding:"0px 7px 7px 7px", marginInline:"15px", borderRadius:"2px", color:"#fff", fontSize:"25px", fontWeight:"900"}}>+</span>
                     </div>
                     <div style={{width : "100%", display: "flex", flexDirection: "row", flexWrap: "wrap"}}>

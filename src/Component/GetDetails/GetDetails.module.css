@@ -12,6 +12,20 @@
     position: relative;
 }
 
+.container a{
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 22px;
+}
+
+.container a::before{
+    content: "↩";
+    font-size: 30px;
+    margin-right: 10px;
+}
+
 .container>div:first-child{
     margin-block-end: 100px;
     width: 70%;
@@ -80,3 +94,4 @@
 .pass{
     background-color: green;
 }
+

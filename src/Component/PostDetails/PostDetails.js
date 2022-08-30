@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import styles from "./../GetDetails/GetDetails.module.css";
 import PaymentPostDetails from "./PaymentPostDetails";
@@ -54,6 +55,7 @@ function PostDetails() {
                 </div>
             }
             <div className={styles.container}>
+                <span className={styles.link}><Link to="/get">Get details</Link></span>
 
                 <div style={{ marginBlockEnd: "50px" }}>
                     <button onClick={() => tabChange("token")}>Token Details</button>

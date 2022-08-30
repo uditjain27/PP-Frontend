@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import TokenGetDetails from "./TokenGetDetails";
 import styles from "./GetDetails.module.css"
 import PrizeGetDetails from "./PrizeGetDetails";
@@ -53,7 +54,9 @@ function GetDetails() {
                 </div>
             }
             <div className={styles.container}>
-
+                <span className={styles.link}>
+                    <Link to="/post">Post Details </Link>
+                </span>
                 <div>
                     <button onClick={() => tabChange("token")}>Token Details</button>
                     <button onClick={() => tabChange("prize")}>Prize Details</button>
