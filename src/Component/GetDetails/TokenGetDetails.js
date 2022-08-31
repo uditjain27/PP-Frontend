@@ -121,7 +121,7 @@ const TokenGetDetails = function (props) {
                             <span>Reference : </span>
                             <span>{detailsByToken && detailsByToken.reference}</span>
                         </div>
-
+                        
                     </div>
                 }
             </div>

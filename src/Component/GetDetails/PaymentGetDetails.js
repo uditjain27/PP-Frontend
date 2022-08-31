@@ -98,7 +98,7 @@ const PaymentGetDetails = (props) => {
                             return <div key={ele.tokenNumber}>
                                 <div className={styles.bigBox}>
                                     <span>
-                                        {ele.tokenNumber}<br />{ele.reference}
+                                        {ele.tokenNumber}<br/>{ele.name}<br />{ele.reference}
                                     </span>
                                 </div>
                                 <div className={styles.longBox}>
