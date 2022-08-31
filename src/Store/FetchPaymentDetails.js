@@ -16,7 +16,7 @@ const FetchAllPaymentDetails = async (func, func2) => {
 
 export const FetchAllPaymentDetailsbyTokenNumber = async(token, func, func2) => {
     func(true);
-    const res = await fetch(`${PaymentURL}/${token}`);
+    const res = await fetch(`${PaymentURL}${token}`);
     if(!res.ok){
         func2("Failed to fetch payment details.", true);
         func(false);
@@ -32,7 +32,7 @@ export const FetchAllPaymentDetailsbyTokenNumber = async(token, func, func2) => 
 
 export const FetchAllPaymentDetailsbyReference = async(ref, func, func2) => {
     func(true);
-    const res = await fetch(`${PaymentURL}/reference/${ref}`);
+    const res = await fetch(`${PaymentURL}reference/${ref}`);
     if(!res.ok){
         func2("Failed to fetch payment details.", true);
         func(false);
