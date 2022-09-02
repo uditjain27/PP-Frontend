@@ -27,7 +27,6 @@
 }
 
 .container>div:first-child{
-    margin-block-end: 100px;
     width: 70%;
     height: auto;
     display: flex;
@@ -47,7 +46,7 @@
     color: #fff;
 }
 
-.tab, .tabz{
+.tab, .tabz, .taby{
     width: 85vw;
     display: flex;
     flex-direction: row;
@@ -60,6 +59,10 @@
     width: 90vw;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.taby{
+    margin-top: 10px;
 }
 
 .message{
@@ -95,3 +98,51 @@
     background-color: green;
 }
 
+
+@media screen and (max-width:1000px) {
+    .container{
+        background-image: url(./../../Images/1366919.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    }
+
+    .container>div:first-of-type{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        margin-block-end: 0;
+    }
+
+    .container>div>button{
+        margin-block: 7px;
+        font-size: 18px;
+        padding: 5px 0;
+    }
+
+    .tab{
+        width: 90vw;
+    }
+
+    .message{
+        font-size: 15px;
+        padding: 15px 10px;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .message>span:last-child{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 17px;
+    }
+    
+    .message>span:first-child{
+        width: 165px;
+        display: inline-block;
+    }
+}

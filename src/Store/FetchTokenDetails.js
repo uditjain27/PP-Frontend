@@ -33,7 +33,10 @@ export const FetchAllReference = async(func2) => {
         return;
     }
     const data = await res.json();
-    return data;
+    return data.sort((a,b) => {
+        if(a>b) return 1;
+        else return -1;
+    });
 }
 
 export default FetchDetailsByTokenNumber;

@@ -63,7 +63,6 @@
     cursor: pointer;
 }
 
-
 .card {
     width: 100%;
     height: 300px;
@@ -74,23 +73,23 @@
     color: #000;
 }
 
-.card>div{
+.card>div {
     font-size: 20px;
     margin-top: 20px;
 }
 
-.card>div>span:first-child{
+.card>div>span:first-child {
     font-weight: 900;
     display: inline-block;
     min-width: 170px;
     text-align: right;
 }
 
-.card>div>span:last-child{
+.card>div>span:last-child {
     margin-left: 20px;
 }
 
-select{
+select {
     padding: 10px;
     border: none;
     border-radius: 10px;
@@ -98,20 +97,137 @@ select{
     margin-left: 15px;
 }
 
-select:focus{
+select:focus {
     outline: none;
 }
 
-option{
+option {
     font-size: 15px;
     border-radius: 5px;
 }
 
-.tokenButton{
+.tokenButton {
     margin-top: 25px;
     margin-inline: 20px;
     background-color: #F39C12;
     padding: 5px 20px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+@media screen and (max-width:1000px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container>div:first-child {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .container>div:nth-child(2) {
+        width: 100%;
+    }
+
+    .container>div:nth-child(2) {
+        width: 100%;
+    }
+    
+    .container>div:last-child {
+        width: 100%;
+    }
+    select{
+        width: 19.4rem;
+    }
+    
+    .form select {
+        width: 18rem;
+    }
+
+    .buttonContainer {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .buttonContainer>div {
+        padding: 5px 10px;
+        font-size: 13px;
+        min-width: 6rem;
+    }
+
+    .buttonContainer>div:first-child {
+        margin-bottom: 0px;
+    }
+
+    .form {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .form>label{
+        display: inline-block;
+        width: auto;
+    }
+    
+    .form>input {
+        display: inline-block;
+        width: 110px;
+        margin-left: 10px;
+    }
+    
+    .form>input:focus {
+        outline: none;
+    }
+    
+    .form>button {
+        padding: 10px 25px;
+        font-size: 14px;
+        margin-top: 25px;
+    }
+    
+
+    .card {
+        width: 100%;
+        height: auto;
+        margin-right: 0rem;
+        margin-top: 20px;
+        padding: 1rem 1.5rem;
+    }
+
+    .card>div {  
+        margin-top: 0px;
+        margin-bottom: 20px;
+        color: #F5A623;
+    }
+    
+    .card>div>span:first-child {
+        font-weight: 600;
+        font-size: 17px;
+        display: inline-block;
+        min-width: 0px;
+        width: 140px;
+        text-align: right;
+    }
+    
+    .card>div>span:last-child {
+        font-size: 19px;
+        margin-left: 20px;
+    }
+
+    .ll{
+        color: rgb(36, 229, 23);
+        font-weight: 500;
+        margin-top: 10px;
+    }
+
+    .tokenButton {
+        margin-top: 15px;
+        margin-inline: 10px;
+        padding: 5px 15px;
+    }
 }

@@ -69,7 +69,7 @@ function PostDetails() {
                         </div>
                     }
                     {
-                        isVisible === true && tab === "prize" && <div id="prize" className={styles.tab}>
+                        isVisible === true && tab === "prize" && <div id="prize">
                             <PrizePostDetails togglePreLoader={togglePreLoader} setDisplayMessage={setDisplayMessage} />
                         </div>
                     }

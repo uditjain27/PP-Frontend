@@ -6,11 +6,12 @@
     font-size: 18px;
     margin-top: 25px;
 }
-.form>div{
+
+.form>div {
     margin-bottom: 20px;
 }
 
-.form>div>label{
+.form>div>label {
     display: inline-block;
     text-align: end;
     width: 150px;
@@ -29,7 +30,7 @@
     outline: none;
 }
 
-.form>div>button{
+.form>div>button {
     border: none;
     padding: 10px 25px;
     border-radius: 5px;
@@ -41,11 +42,79 @@
     cursor: pointer;
 }
 
-.tokenButton{
+.tokenButton {
     margin-inline: 20px;
     background-color: #F39C12;
     padding: 5px 20px;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 5px;
+}
+
+.plusIcon {
+    width: 50px;
+    display: inline-block;
+    background-color: #F39C12;
+    text-align:center;
+    padding: 0px 7px 7px 7px;
+    margin-inline: 15px;
+    border-radius:2px; 
+    color: #fff; 
+    font-size:25px; 
+    font-weight :900
+}
+
+
+@media screen and (max-width:1000px) {
+    .inputContainer {
+        margin-top: -40px;
+    }
+
+    .form {
+        width: 90vw;
+        background-color: rgba(242, 242, 163, 0.826);
+        padding: 8px;
+        margin-top: 15px;
+    }
+
+    .form>div {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .form>div>label {
+        display: block;
+        text-align: start;
+        font-size: 14px;
+        margin-left: 25px;
+        margin-bottom: 3px;
+    }
+
+    .form>div>input {
+        font-size: 13px;
+        padding: 12px 15px;
+        margin-left: 10px;
+    }
+
+    .form>div>button {
+        padding: 8px 15px;
+        font-size: 14px;
+        margin-top: 10px;
+        margin-left: 7rem;
+    }
+
+    .tokenButton {
+        margin-inline: 10px;
+        padding: 5px 10px;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .plusIcon {
+        width: fit-content;
+        display: block;
+        padding: 0px 10px 3px 10px;
+        font-size:20px; 
+        font-weight :900
+    }
 }

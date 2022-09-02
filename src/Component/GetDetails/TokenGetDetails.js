@@ -47,10 +47,7 @@ const TokenGetDetails = function (props) {
 
     const get = async () => {
         const data = await FetchAllReference(props.setDisplayMessage);
-        setReference(data.sort((a,b) => {
-            if(a>b) return 1;
-            else return -1;
-        }));
+        setReference(data);
     }
 
     const tokenOnClickHandler = (token) => {
@@ -67,6 +64,7 @@ const TokenGetDetails = function (props) {
             <div>
                 {view === "token" &&
                     <form className={styles.form} onSubmit={form1SubmitHandler}>
+
                         <label htmlFor="num">Enter your Token Number : </label>
                         <input id="num" type="number" ref={tokenRef} required></input>
                         <button type="submit">Fetch Info</button>
@@ -86,7 +84,7 @@ const TokenGetDetails = function (props) {
                         {
                             referenceDetails &&
                             <div>
-                                <div style={{ display: "block" }}>Token Numbers are : </div>
+                                <div className={styles.ll} style={{ display: "block" }}>Token Numbers are : </div>
                                 <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
                                     {referenceDetails.map(
                                         ele => <span className={styles.tokenButton} onClick={() => tokenOnClickHandler(ele.tokenNumber)} key={ele.tokenNumber}>{ele.tokenNumber}</span>

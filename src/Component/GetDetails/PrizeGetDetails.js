@@ -34,7 +34,7 @@ const PrizeGetDetails = (props) => {
             {
                 prizeList && prizeList.map(ele => {
                     return <div key={ele.mainCashPrize}>
-                        <span>{ele.month},{ele.year}</span>
+                        <span>{ele.month}<br/>{ele.year}</span>
                         <span>{ele.mainCashPrize}<br/>{ele.mainCashPrizeName}</span>
                         <span>{ele.firstCashPrize}<br/>{ele.firstCashPrizeName}</span>
                         <span>{ele.secondCashPrize}<br/>{ele.secondCashPrizeName}</span>

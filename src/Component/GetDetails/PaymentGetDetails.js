@@ -32,10 +32,7 @@ const PaymentGetDetails = (props) => {
 
         if (stateString === "ref" && reference.length === 0) {
             const data = await FetchAllReference(props.setDisplayMessage);
-            setReference(data.sort((a,b) => {
-                if(a>b) return 1;
-                else return -1;
-            }));
+            setReference(data);
         }
         if (stateString === "all") {
             const data = await FetchAllPaymentDetails(props.togglePreLoader,props.setDisplayMessage);

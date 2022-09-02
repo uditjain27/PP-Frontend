@@ -122,7 +122,7 @@ const TokenPostDetails = (props) => {
                     <div>
                         <label>Token Number : </label>
                         <input type="number" placeholder="Token" ref={tokenRef} id="token"></input>
-                        <span onClick={tokenAddHandler} style={{width:"50px", display:"inline-block", backgroundColor:"#F39C12", textAlign:"center", padding:"0px 7px 7px 7px", marginInline:"15px", borderRadius:"2px", color:"#fff", fontSize:"25px", fontWeight:"900"}}>+</span>
+                        <span onClick={tokenAddHandler} className={style.plusIcon}>+</span>
                     </div>
                     <div style={{width : "100%", display: "flex", flexDirection: "row", flexWrap: "wrap"}}>
                         {

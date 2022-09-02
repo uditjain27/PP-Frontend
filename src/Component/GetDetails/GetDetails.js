@@ -12,7 +12,7 @@ function GetDetails() {
     const [isLoaderVisible, setIsLoaderVisible] = useState(false);
     const [tab, setTab] = useState();
     const [isMessageVisible, setIsMessageVisible] = useState(false);
-    const [message, setMessage] = useState("User added successfully successfully");
+    const [message, setMessage] = useState("User added successfu l ly successfully");
     const [isError, setIsError] = useState(false);
 
 
@@ -54,22 +54,20 @@ function GetDetails() {
                 </div>
             }
             <div className={styles.container}>
-                <span className={styles.link}>
-                    <Link to="/post">Post Details </Link>
-                </span>
+                <Link to="/post">Post Details </Link>
                 <div>
                     <button onClick={() => tabChange("token")}>Token Details</button>
                     <button onClick={() => tabChange("prize")}>Prize Details</button>
                     <button onClick={() => tabChange("payment")}>Payment Details</button>
                 </div>
                 <div>
-                    {isVisible === true && tab === "token" && <div id="token" className={styles.tab}>
+                    {isVisible === true && tab === "token" && <div id="token" className={styles.taby}>
                         <TokenGetDetails togglePreLoader={togglePreLoader} setDisplayMessage={setDisplayMessage} />
                     </div>}
-                    {isVisible === true && tab === "prize" && <div id="prize" className={styles.tab}>
+                    {isVisible === true && tab === "prize" && <div id="prize" className={styles.taby}>
                         <PrizeGetDetails togglePreLoader={togglePreLoader} setDisplayMessage={setDisplayMessage} />
                     </div>}
-                    {isVisible === true && tab === "payment" && <div id="payment" className={styles.tabz}>
+                    {isVisible === true && tab === "payment" && <div id="payment" className={styles.taby}>
                         <PaymentGetDetails togglePreLoader={togglePreLoader} setDisplayMessage={setDisplayMessage} />
                     </div>}
                 </div>
