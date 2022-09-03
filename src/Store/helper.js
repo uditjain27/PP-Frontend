@@ -1,6 +1,7 @@
 //const baseURL = `http://www.localhost:8080/`/
 const baseURL = `https://p-project-backend.herokuapp.com/`;
 
+export const loginURL = `${baseURL}login`;
 const GetDetailsOfMemberURL = `${baseURL}member/`;
 export const PrizeURL = `${baseURL}prize/`;
 export const PaymentURL = `${baseURL}payment/`;
