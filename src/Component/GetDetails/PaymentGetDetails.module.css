@@ -1,17 +1,17 @@
-.inputContainer{
+.inputContainer {
     width: 100%;
     margin-bottom: 20px;
 }
 
-.container{
+.container {
     width: 100%;
     height: fit-content;
-    max-height: 480px;
+    max-height: 580px;
     background-color: rgba(240, 248, 255, 0.834);
     overflow-y: auto;
 }
 
-.container>div{
+.container>div {
     box-sizing: border-box;
     width: 100%;
     display: flex;
@@ -20,15 +20,15 @@
     border-bottom: 2px #000 solid;
 }
 
-.label{
+.label {
     font-size: 18px;
 }
 
-.form{
+.form {
     margin-bottom: 25px;
 }
 
-.form>input{
+.form>input {
     border: none;
     font-size: 18px;
     padding: 8px 15px;
@@ -38,15 +38,15 @@
     border-radius: 5px;
 }
 
-.form>select{
+.form>select {
     margin-left: 20px;
 }
 
-.form>input:focus{
+.form>input:focus {
     outline: none;
 }
 
-.form>button{
+.form>button {
     padding: 8px 25px;
     border-radius: 5px;
     border: none;
@@ -54,13 +54,13 @@
     margin-left: 15px;
 }
 
-.bigBox{
+.bigBox {
     display: inline-block;
     width: 15%;
     padding: 15px 35px;
 }
 
-.longBox{
+.longBox {
     border-left: 3px #000 solid;
     width: 95%;
     display: flex;
@@ -71,48 +71,54 @@
     font-size: 12px;
 }
 
-.longBox>span{
+.longBox>span {
     width: 10%;
     margin-block: 5px;
 }
 
-.cool{
+.cool {
     color: rgb(39, 175, 39);
 }
 
-.danger{
+.danger {
     color: rgb(245, 87, 87);
 }
 
 @media screen and (max-width:1000px) {
-    .label{
+
+    .container {
+        max-height: 500px;
+        margin-bottom: 50px;
+    }
+
+    .label {
         font-size: 16px;
     }
 
-    .form label{
+    .form label {
         display: inline-block;
         font-size: 16px;
         margin-bottom: 5px;
         margin-left: 10px;
     }
-    
-    .form>input{
+
+    .form>input {
         font-size: 15px;
         margin-left: 0;
     }
 
-    .form>select{
+    .form>select {
         margin: 0;
         margin-bottom: 15px;
     }
 
-    .form>button{
+    .form>button {
         padding: 7px 25px;
         color: #fff;
         font-size: 16px;
     }
 
-    .bigBox{
+    .bigBox {
         width: 18%;
         max-width: 18%;
         min-width: 18%;
@@ -120,14 +126,14 @@
         font-size: 12px;
         line-height: 30px;
     }
-    
-    .longBox{
+
+    .longBox {
         border-left: 2px #000 solid;
         font-size: 9px;
-        padding-right: 3px;
+        padding-right: 10px;
     }
-    
-    .longBox>span{
+
+    .longBox>span {
         width: 16.8%;
         margin-block: 5px;
     }
