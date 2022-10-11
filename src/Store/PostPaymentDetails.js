@@ -32,7 +32,8 @@ export const postByReference = async (obj, func, func2) => {
         func(false);
         return;
     }
-    func2("Payment details posted successfully", false);
+    const num = await res.json();
+    func2(`Payment details of ${num} members is posted successfully`, false);
     func(false);
 }
 

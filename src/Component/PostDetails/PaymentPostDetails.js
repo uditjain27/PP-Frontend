@@ -56,7 +56,8 @@ const PaymentPostDetails = (props) => {
         "PhonePe",
         "GooglePay",
         "UPI",
-        "Account Adjust"
+        "Account Adjust",
+        "Advance"
     ];
 
     var today = new Date();
