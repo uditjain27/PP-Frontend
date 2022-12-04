@@ -1,5 +1,5 @@
 //const baseURL = `http://www.localhost:8080/`;
-const baseURL = `https://p-project-backend.herokuapp.com/`;
+const baseURL = `https://newproject-baf80.el.r.appspot.com/`;
 
 export const loginURL = `${baseURL}login`;
 const GetDetailsOfMemberURL = `${baseURL}member/`;
