@@ -1,5 +1,6 @@
 //const baseURL = `http://www.localhost:8080/`;
-const baseURL = `https://newproject-baf80.el.r.appspot.com/`;
+/* const baseURL = `https://newproject-baf80.el.r.appspot.com/`; */
+const baseURL = `http://helloworldnormal.df.r.appspot.com/`;
 
 export const loginURL = `${baseURL}login`;
 const GetDetailsOfMemberURL = `${baseURL}member/`;
